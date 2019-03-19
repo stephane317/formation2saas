@@ -1,0 +1,10 @@
+<h1>Users list page</h1>
+
+<div *ngIf="users.length !== 0">
+    <app-user-card *ngFor="let currentUser of users" (onDelete)="onDeleteUser($event)" (onUpdate)="onUpdateUser($event)"
+        [user]="currentUser"></app-user-card>
+</div>
+
+<div *ngIf="users.length == 0">
+    Aucun user à afficher
+</div>
