@@ -1,6 +1,6 @@
 <h2>Form edition user</h2>
 
-<form [formGroup]="userForm" (ngSubmit)="saveUser()">
+<form [formGroup]="userForm" (ngSubmit)="saveUser($event)">
   <input type="text" placeholder="firstname" formControlName="firstname">
   <input type="text" placeholder="lastname" formControlName="lastname">
   <input type="text" placeholder="email" formControlName="email">
