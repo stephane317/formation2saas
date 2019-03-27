@@ -4,7 +4,10 @@ import {
   FormsModule,
   ReactiveFormsModule
 } from '@angular/forms';
-
+// NEED TO BE IMPORTED IN THE ROOT/MAIN MODULE
+// ----------------------------
+import { HttpClientModule } from '@angular/common/http';
+// ----------------------------
 import { AppComponent } from './app.component';
 import { AccountCreatePageComponent } from './pages/account/account-create-page/account-create-page.component';
 import { AccountUpdatePageComponent } from './pages/account/account-update-page/account-update-page.component';
@@ -29,7 +32,9 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // NEED TO BE IMPORTED IN THE ROOT/MAIN MODULE
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

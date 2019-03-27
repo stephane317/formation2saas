@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: './module/user/user.module#UserModule'
   },
   {
+    path: 'post',
+    loadChildren: './module/post/post.module#PostModule'
+  },
+  {
     path: 'accountTest',
     loadChildren: './module/account/account.module#AccountModule'
   },
